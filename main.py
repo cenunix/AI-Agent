@@ -35,7 +35,7 @@ def main():
     ]
 
     client = genai.Client(api_key=api_key)
-    for i in range(10):
+    for i in range(20):
         try:
             final_response = generate_content(client, messages, verbose_logging)
             if final_response:
